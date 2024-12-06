@@ -27,7 +27,7 @@ def parse_json_no_regex(json_str):
         elif json_str.startswith('null', index):
             return None, index + 4
         else:
-            raise ValueError(f"Unexpected character at index {index}: {char}")
+            pass
 
     def parse_object(index):
         obj = {}
